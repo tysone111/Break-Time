@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Break Time | Customer Feedback</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+    <div id="queryForm">
+        <p id="infoText">GIVE US FEEDBACK</p>
+        <p style="color:white; font-family: monospace; text-align: center;">We encourage customer voice to improve our service. Please write your name, email and feedback message below:</p>
+        <form action="https://formspree.io/breaktimecafeapplication@gmail.com" method="post">
+            <label>Name:</label>
+            <input type="text" id="name" name="Customer Name">
+            <br>
+            <label>E-mail:</label>
+            <input type="email" id="mail" name="Customer Email">
+            <br>
+            <label>Write your message below: (200 characters max)</label>
+            <textarea id="msg" maxlength="200" name="Customer Message"></textarea>
+            <br>
+            <input id="confirm" type="submit" value="Submit">
+
+            <input type="hidden" name="_next" value="giveusfeedback/thankyou.html"/>
+            <input type="hidden" name="_subject" value="Customer Feedback" />
+            <input type="hidden" name="_format" value="plain"/>
+        </form>
+    </div>  
+    <script type="text/javascript" src="../script.js"></script>
+</body>
+</html>
